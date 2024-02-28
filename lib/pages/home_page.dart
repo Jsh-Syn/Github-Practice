@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.black87,
         title: Text(
-          'A-Game',
+          'A-Game 2nd Try',
           style: TextStyle(
             fontSize: 21,
             fontWeight: FontWeight.bold,
