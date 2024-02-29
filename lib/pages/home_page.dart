@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_application_1/core/constant.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -12,7 +13,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.black87,
-        title: Text(
+        title: const Text(
           'A-Game',
           style: TextStyle(
             fontSize: 21,
@@ -29,7 +30,22 @@ class HomePage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 color: Colors.green[100],
                 width: double.infinity,
-                child: Image.asset('images/gaming_controller.png'),
+                child: Column(
+                  children: [
+                    const SizedBox(height: kDouble5),
+                    Image.asset('images/gaming_controller.png'),
+                    const Text(
+                      'Title',
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                    const Text(
+                      'Description',
+                      style: TextStyle(fontSize: 18),
+                    ),
+                    const SizedBox(height: kDouble5),
+                  ],
+                ),
               ),
             ),
             Row(
@@ -39,7 +55,22 @@ class HomePage extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.all(8.0),
                       color: Colors.green[100],
-                      child: Image.asset('images/man.png'),
+                      child: Column(
+                        children: [
+                          const SizedBox(height: kDouble5),
+                          Image.asset('images/man.png'),
+                          const Text(
+                            'Title',
+                            style: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.bold),
+                          ),
+                          const Text(
+                            'Description',
+                            style: TextStyle(fontSize: 18),
+                          ),
+                          const SizedBox(height: kDouble5),
+                        ],
+                      ),
                     ),
                   ),
                 ),
@@ -48,7 +79,22 @@ class HomePage extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.all(8.0),
                       color: Colors.green[100],
-                      child: Image.asset('images/woman.png'),
+                      child: Column(
+                        children: [
+                          const SizedBox(height: kDouble5),
+                          Image.asset('images/woman.png'),
+                          const Text(
+                            'Title',
+                            style: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.bold),
+                          ),
+                          const Text(
+                            'Description',
+                            style: TextStyle(fontSize: 18),
+                          ),
+                          const SizedBox(height: kDouble5),
+                        ],
+                      ),
                     ),
                   ),
                 ),
@@ -59,7 +105,22 @@ class HomePage extends StatelessWidget {
                 width: double.infinity,
                 padding: const EdgeInsets.all(8.0),
                 color: Colors.green[100],
-                child: Image.asset('images/levels.png'),
+                child: Column(
+                  children: [
+                    const SizedBox(height: kDouble5),
+                    Image.asset('images/levels.png'),
+                    const Text(
+                      'Title',
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                    const Text(
+                      'Description',
+                      style: TextStyle(fontSize: 18),
+                    ),
+                    const SizedBox(height: kDouble5),
+                  ],
+                ),
               ),
             ),
           ],
