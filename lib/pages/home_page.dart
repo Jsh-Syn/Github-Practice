@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_application_1/class/item_class.dart';
-import 'package:flutter_application_1/widget/card_widget.dart';
+import 'package:flutter_application_1/core/constant.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -10,6 +9,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //new
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.black87,
@@ -25,38 +25,102 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // card widget -- ayan na yung final changes tapos ginawang ng ItemClass na
-            // ipinasok sa kanya para macall din nya yung box
-            CardWidget(
-              box: ItemClass(
-                title: "Game",
-                imagePath: 'images/gaming_controller.png',
+            Card(
+              child: Container(
+                padding: const EdgeInsets.all(8.0),
+                color: Colors.green[100],
+                width: double.infinity,
+                child: Column(
+                  children: [
+                    const SizedBox(height: kDouble5),
+                    Image.asset('images/gaming_controller.png'),
+                    const Text(
+                      'Title',
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                    const Text(
+                      'Description',
+                      style: TextStyle(fontSize: 18),
+                    ),
+                    const SizedBox(height: kDouble5),
+                  ],
+                ),
               ),
             ),
             Row(
               children: [
                 Expanded(
-                  child: CardWidget(
-                    box: ItemClass(
-                      title: "Competitive",
-                      imagePath: 'images/man.png',
+                  child: Card(
+                    child: Container(
+                      padding: const EdgeInsets.all(8.0),
+                      color: Colors.green[100],
+                      child: Column(
+                        children: [
+                          const SizedBox(height: kDouble5),
+                          Image.asset('images/man.png'),
+                          const Text(
+                            'Title',
+                            style: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.bold),
+                          ),
+                          const Text(
+                            'Description',
+                            style: TextStyle(fontSize: 18),
+                          ),
+                          const SizedBox(height: kDouble5),
+                        ],
+                      ),
                     ),
                   ),
                 ),
                 Expanded(
-                  child: CardWidget(
-                    box: ItemClass(
-                      title: "Fun",
-                      imagePath: 'images/woman.png',
+                  child: Card(
+                    child: Container(
+                      padding: const EdgeInsets.all(8.0),
+                      color: Colors.green[100],
+                      child: Column(
+                        children: [
+                          const SizedBox(height: kDouble5),
+                          Image.asset('images/woman.png'),
+                          const Text(
+                            'Title',
+                            style: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.bold),
+                          ),
+                          const Text(
+                            'Description',
+                            style: TextStyle(fontSize: 18),
+                          ),
+                          const SizedBox(height: kDouble5),
+                        ],
+                      ),
                     ),
                   ),
                 ),
               ],
             ),
-            CardWidget(
-              box: ItemClass(
-                title: "Level",
-                imagePath: 'images/levels.png',
+            Card(
+              child: Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(8.0),
+                color: Colors.green[100],
+                child: Column(
+                  children: [
+                    const SizedBox(height: kDouble5),
+                    Image.asset('images/levels.png'),
+                    const Text(
+                      'Title',
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                    const Text(
+                      'Description',
+                      style: TextStyle(fontSize: 18),
+                    ),
+                    const SizedBox(height: kDouble5),
+                  ],
+                ),
               ),
             ),
           ],
