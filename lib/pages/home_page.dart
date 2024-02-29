@@ -25,6 +25,8 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            // card widget -- ayan na yung final changes tapos ginawang ng ItemClass na
+            // ipinasok sa kanya para macall din nya yung box
             CardWidget(
               box: ItemClass(
                 title: "Game",

@@ -10,13 +10,16 @@ class CardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // eto yung card pa rin pero Wrap as Widget then ginawang GestureDetector
     return GestureDetector(
       onTap: () {
         Navigator.push(
           context,
           MaterialPageRoute(
             builder: (context) {
-              return const DescriptionPage();
+              return DescriptionPage(
+                box: box,
+              );
             },
           ),
         );
@@ -24,7 +27,7 @@ class CardWidget extends StatelessWidget {
       child: Card(
         child: Container(
           padding: const EdgeInsets.all(8.0),
-          color: const Color.fromARGB(255, 222, 252, 223),
+          color: const Color.fromARGB(255, 225, 226, 229),
           width: double.infinity,
           child: Column(
             children: [
@@ -36,7 +39,7 @@ class CardWidget extends StatelessWidget {
                     const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               Text(
-                'This is the ${box.title} description',
+                'This is the ${box.title.toLowerCase()} description.',
                 style: const TextStyle(fontSize: 15),
               ),
               const SizedBox(height: kDouble5),
