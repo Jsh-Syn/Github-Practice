@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_application_1/class/item_class.dart';
 import 'package:flutter_application_1/widget/card_widget.dart';
 
 class HomePage extends StatelessWidget {
@@ -21,32 +22,40 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Column(
           children: [
             CardWidget(
-              title: "Game",
-              imagePath: 'images/gaming_controller.png',
+              box: ItemClass(
+                title: "Game",
+                imagePath: 'images/gaming_controller.png',
+              ),
             ),
             Row(
               children: [
                 Expanded(
                   child: CardWidget(
-                    title: "Competitive",
-                    imagePath: 'images/man.png',
+                    box: ItemClass(
+                      title: "Competitive",
+                      imagePath: 'images/man.png',
+                    ),
                   ),
                 ),
                 Expanded(
                   child: CardWidget(
-                    title: "Fun",
-                    imagePath: 'images/woman.png',
+                    box: ItemClass(
+                      title: "Fun",
+                      imagePath: 'images/woman.png',
+                    ),
                   ),
                 ),
               ],
             ),
             CardWidget(
-              title: "Levels",
-              imagePath: 'images/levels.png',
+              box: ItemClass(
+                title: "Level",
+                imagePath: 'images/levels.png',
+              ),
             ),
           ],
         ),
