@@ -1,16 +1,15 @@
-# flutter_application_1
+# Flutter Practice Project
 
-A new Flutter project.
+This project serves as a practice ground for learning Flutter development and honing skills in using Git commands for version control.
 
-## Getting Started
+## Purpose
+The primary objective of this project is to:
 
-This project is a starting point for a Flutter application.
+- **Practice Flutter Development**: Experiment with Flutter framework, build UI components, and develop functionality.
+- **Learn Git Commands**: Gain proficiency in utilizing Git commands such as push, pull, commit, and merge for effective collaboration and version control.
 
-A few resources to get you started if this is your first Flutter project:
+## Contributing
+Since this project is primarily for personal practice, contributions are not expected. However, if you have suggestions or improvements, feel free to submit a pull request.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## License
+This project is licensed under the [MIT License](LICENSE).
