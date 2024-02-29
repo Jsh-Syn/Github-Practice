@@ -14,3 +14,11 @@ Since this project is primarily for personal practice, contributions are not exp
 ## Screenshots
 
 ![alt text](https://github.com/Jsh-Syn/Github-Practice/blob/main/images/SS/AppIcon1.png)
+![alt text](https://github.com/Jsh-Syn/Github-Practice/blob/main/images/SS/AppIcon2.png)
+![alt text](https://github.com/Jsh-Syn/Github-Practice/blob/main/images/SS/CardLarge_Light.png)
+![alt text](https://github.com/Jsh-Syn/Github-Practice/blob/main/images/SS/Card_Dark.png)
+![alt text](https://github.com/Jsh-Syn/Github-Practice/blob/main/images/SS/Card_Light.png)
+![alt text](https://github.com/Jsh-Syn/Github-Practice/blob/main/images/SS/Homepage_Dark.png)
+![alt text](https://github.com/Jsh-Syn/Github-Practice/blob/main/images/SS/Homepage_Light.png)
+![alt text](https://github.com/Jsh-Syn/Github-Practice/blob/main/images/SS/Profile_Dark.png)
+![alt text](https://github.com/Jsh-Syn/Github-Practice/blob/main/images/SS/Profile_Light.png)
