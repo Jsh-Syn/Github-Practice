@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_application_1/core/constant.dart';
+import 'package:flutter_application_1/widget/card_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -9,7 +9,6 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //new
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.black87,
@@ -22,83 +21,32 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Column(
           children: [
+            CardWidget(
+              title: "Game",
+              imagePath: 'images/gaming_controller.png',
+            ),
             Row(
               children: [
                 Expanded(
-                  child: Card(
-                    child: Container(
-                      padding: const EdgeInsets.all(8.0),
-                      color: Colors.green[100],
-                      width: double.infinity,
-                      child: Column(
-                        children: [
-                          const SizedBox(height: kDouble5),
-                          Image.asset('images/gaming_controller.png'),
-                          const Text(
-                            'Title',
-                            style: TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.bold),
-                          ),
-                          const Text(
-                            'Description',
-                            style: TextStyle(fontSize: 18),
-                          ),
-                          const SizedBox(height: kDouble5),
-                        ],
-                      ),
-                    ),
+                  child: CardWidget(
+                    title: "Competitive",
+                    imagePath: 'images/man.png',
                   ),
                 ),
                 Expanded(
-                  child: Card(
-                    child: Container(
-                      padding: const EdgeInsets.all(8.0),
-                      color: Colors.green[100],
-                      child: Column(
-                        children: [
-                          const SizedBox(height: kDouble5),
-                          Image.asset('images/gaming_controller.png'),
-                          const Text(
-                            'Title',
-                            style: TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.bold),
-                          ),
-                          const Text(
-                            'Description',
-                            style: TextStyle(fontSize: 18),
-                          ),
-                          const SizedBox(height: kDouble5),
-                        ],
-                      ),
-                    ),
+                  child: CardWidget(
+                    title: "Fun",
+                    imagePath: 'images/woman.png',
                   ),
                 ),
               ],
             ),
-            Card(
-              child: Container(
-                padding: const EdgeInsets.all(8.0),
-                color: Colors.green[100],
-                child: Column(
-                  children: [
-                    const SizedBox(height: kDouble5),
-                    Image.asset('images/gaming_controller.png'),
-                    const Text(
-                      'Title',
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                    ),
-                    const Text(
-                      'Description',
-                      style: TextStyle(fontSize: 18),
-                    ),
-                    const SizedBox(height: kDouble5),
-                  ],
-                ),
-              ),
+            CardWidget(
+              title: "Levels",
+              imagePath: 'images/levels.png',
             ),
           ],
         ),
