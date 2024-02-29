@@ -11,5 +11,6 @@ The primary objective of this project is to:
 ## Contributing
 Since this project is primarily for personal practice, contributions are not expected. However, if you have suggestions or improvements, feel free to submit a pull request.
 
-## License
-This project is licensed under the [MIT License](LICENSE).
+## Screenshots
+
+![alt text](https://github.com/Jsh-Syn/Github-Practice/blob/main/images/SS/AppIcon1.png)
