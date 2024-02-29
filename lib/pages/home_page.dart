@@ -25,29 +25,6 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Card(
-              child: Container(
-                padding: const EdgeInsets.all(8.0),
-                color: Colors.green[100],
-                width: double.infinity,
-                child: Column(
-                  children: [
-                    const SizedBox(height: kDouble5),
-                    Image.asset('images/gaming_controller.png'),
-                    const Text(
-                      'Title',
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                    ),
-                    const Text(
-                      'Description',
-                      style: TextStyle(fontSize: 18),
-                    ),
-                    const SizedBox(height: kDouble5),
-                  ],
-                ),
-              ),
-            ),
             Row(
               children: [
                 Expanded(
@@ -55,10 +32,11 @@ class HomePage extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.all(8.0),
                       color: Colors.green[100],
+                      width: double.infinity,
                       child: Column(
                         children: [
                           const SizedBox(height: kDouble5),
-                          Image.asset('images/man.png'),
+                          Image.asset('images/gaming_controller.png'),
                           const Text(
                             'Title',
                             style: TextStyle(
@@ -82,7 +60,7 @@ class HomePage extends StatelessWidget {
                       child: Column(
                         children: [
                           const SizedBox(height: kDouble5),
-                          Image.asset('images/woman.png'),
+                          Image.asset('images/gaming_controller.png'),
                           const Text(
                             'Title',
                             style: TextStyle(
@@ -102,13 +80,12 @@ class HomePage extends StatelessWidget {
             ),
             Card(
               child: Container(
-                width: double.infinity,
                 padding: const EdgeInsets.all(8.0),
                 color: Colors.green[100],
                 child: Column(
                   children: [
                     const SizedBox(height: kDouble5),
-                    Image.asset('images/levels.png'),
+                    Image.asset('images/gaming_controller.png'),
                     const Text(
                       'Title',
                       style:
